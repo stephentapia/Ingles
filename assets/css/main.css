@@ -2799,7 +2799,7 @@ input, select, textarea {
 			@media screen and (max-width: 1280px) {
 
 				.wrapper > .inner {
-					width: 90%;
+					width: 70%;
 				}
 
 			}
@@ -2807,7 +2807,7 @@ input, select, textarea {
 			@media screen and (max-width: 980px) {
 
 				.wrapper > .inner {
-					width: 100%;
+					width: 70%;
 				}
 
 			}
@@ -3757,7 +3757,9 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		max-width: 45em;
+		max-width: 70%;
+		background-color: #1b206e;
+		color: #ffffff;
 	}
 
 		#cta .inner header {
