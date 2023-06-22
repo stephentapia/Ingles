@@ -3751,6 +3751,11 @@ input, select, textarea {
 	}
 
 /* CTA */
+	#cta{
+		
+		background-color: rgba(0, 0, 0, 0.75);
+		color: #ffffff;
+	}
 
 	#cta .inner {
 		display: -moz-flex;
@@ -3758,8 +3763,6 @@ input, select, textarea {
 		display: -ms-flex;
 		display: flex;
 		max-width: 70%;
-		background-color: #1b206e;
-		color: #ffffff;
 	}
 
 		#cta .inner header {
