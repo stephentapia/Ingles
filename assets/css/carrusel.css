@@ -50,4 +50,5 @@
   .slider .slide {
     height: 250px;
     width: 250px;
+    padding-left: 20px;
   }
