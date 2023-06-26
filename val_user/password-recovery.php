@@ -19,7 +19,7 @@
 			
 			$email = $_POST['email'];				
 							
-			$sql = "SELECT Email, Pass FROM usuario WHERE Email='$email'";				
+			$sql = "SELECT Email, Pass FROM Login WHERE Email='$email'";				
 			$result = mysqli_query($conn, $sql);
 				
 			if (mysqli_num_rows($result) > 0) {				

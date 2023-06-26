@@ -20,33 +20,33 @@
 
     <div class="content"> 
 
-     <h2>Sign In</h2> 
+    <h2>Sign In</h2> 
 
-     <div class="form"> 
+        <div class="form"> 
+            <form method="post" action="val_user/validar.php">
+                <div class="inputBox"> 
 
-      <div class="inputBox"> 
+                    <input type="email" name="email" placeholder="Email" required> <i>Username</i> 
 
-       <input type="email" name="email" placeholder="Email" required> <i>Username</i> 
+                </div> 
 
-      </div> 
+                <div class="inputBox"> 
 
-      <div class="inputBox"> 
+                    <input type="password" name="pass" placeholder="Contraseña" pattern="[A-Za-z0-9]{8,40}" required> <i>Password</i> 
 
-       <input type="password" name="pass" placeholder="Contraseña" pattern="[A-Za-z0-9]{8,40}" required> <i>Password</i> 
+                </div> 
 
-      </div> 
+                <div class="links"><a href="registro.php">Signup</a> 
 
-      <div class="links"> <a href="#">Forgot Password</a> <a href="#">Signup</a> 
+                </div> 
 
-      </div> 
+                <div class="inputBox"> 
 
-      <div class="inputBox"> 
+                    <input type="submit" value="Login"> 
 
-       <input type="submit" value="Login"> 
-
-      </div> 
-
-     </div> 
+                </div> 
+            </form>
+        </div> 
 
     </div> 
 

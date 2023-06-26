@@ -20,33 +20,35 @@
 
     <div class="content"> 
 
-     <h2>Sign In</h2> 
+    <h2>Sign In</h2> 
 
-     <div class="form"> 
+        <div class="form"> 
+            <form method="post" action="val_user/guardar.php">
+                <div class="inputBox"> 
+                    <input type="email" name="email" placeholder="Email" required> <i>Email</i> 
+                </div> 
 
-      <div class="inputBox"> 
+                <div class="inputBox"> 
+                    <input type="nombre" name="nombre" placeholder="nombre" pattern="[A-Za-z]{8,40}" required> <i>Nombre</i> 
+                </div> 
 
-       <input type="email" name="email" placeholder="Email" required> <i>Username</i> 
+                <div class="inputBox"> 
+                    <input type="apellido" name="apellido" placeholder="apellido" pattern="[A-Za-z]{8,40}" required> <i>Apellido</i> 
+                </div>
 
-      </div> 
+                <div class="inputBox"> 
+                    <input type="password" name="pass" placeholder="Contraseña" pattern="[A-Za-z0-9]{8,40}" required> <i>Contrase&nacute;a</i> 
+                </div> 
 
-      <div class="inputBox"> 
+                <div class="links">
+                    <a href="registro.php">Guardar</a> 
+                </div> 
 
-       <input type="password" name="pass" placeholder="ContraseÃ±a" pattern="[A-Za-z0-9]{8,40}" required> <i>Password</i> 
-
-      </div> 
-
-      <div class="links"> <a href="#">Forgot Password</a> <a href="#">Signup</a> 
-
-      </div> 
-
-      <div class="inputBox"> 
-
-       <input type="submit" value="Login"> 
-
-      </div> 
-
-     </div> 
+                <div class="inputBox"> 
+                    <input type="submit" value="Login"> 
+                </div> 
+            </form>
+        </div> 
 
     </div> 
 
