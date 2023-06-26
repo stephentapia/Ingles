@@ -25,6 +25,7 @@
 											<li><a href="empresa.html">Empresa</a></li>
 											<li><a href="generic.html">Generic</a></li>											
 											<li><a href="login/index.html">Sign Up</a></li>
+											<li><a href="val_user/logout.php">Cerrar sesi&oacute;n</a></li>
 										</ul>
 									</div>
 								</li>

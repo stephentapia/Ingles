@@ -26,13 +26,13 @@
 
       <div class="inputBox"> 
 
-       <input type="text" required> <i>Username</i> 
+       <input type="email" name="email" placeholder="Email" required> <i>Username</i> 
 
       </div> 
 
       <div class="inputBox"> 
 
-       <input type="password" required> <i>Password</i> 
+       <input type="password" name="pass" placeholder="Contraseña" pattern="[A-Za-z0-9]{8,40}" required> <i>Password</i> 
 
       </div> 
 
