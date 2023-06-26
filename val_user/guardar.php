@@ -29,11 +29,11 @@ if (mysqli_num_rows($resultado)>0)
  
     if (!$retry_value) {
         echo'<script type="text/javascript"> alert("Fallo el ingresado, porfavor, intentalo nuevamente");
-        window.location.href="../login/registro.php";</script>';
+        window.location.href="../login/registro.html";</script>';
     }
 	
     echo'<script type="text/javascript"> alert("¡¡¡ Ingreso exitoso !!!");
-    window.location.href="../login/registro.php";</script>';
+    window.location.href="../login/index.html";</script>';
 }
  
 mysqli_close($conn);

@@ -38,7 +38,7 @@ session_start();
 				$_SESSION['loggedin'] = true;
 				$_SESSION['name'] = $row['User'];
 				echo'<script type="text/javascript">
-					window.location.href="../index.php";</script>';
+					window.location.href="../index.html";</script>';
 				
 
 				
@@ -46,7 +46,7 @@ session_start();
 			
 			} if($_POST['pass'] != $hash) {
 				echo'<script type="text/javascript"> alert("Conexion fallida, compruebe si el usuario y contraseña estan bien escritas");
-				window.location.href="../login/index.php";</script>';			
+				window.location.href="../login/index.html";</script>';			
 			}	
 			?>
 		</div>
