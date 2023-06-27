@@ -6,5 +6,5 @@ session_unset($_SESSION['email']);
 session_destroy();
 
 echo'<script type="text/javascript">
-window.location.href="../index.php";</script>';
+window.location.href="../index.index.html";</script>';
 ?>
