@@ -12,8 +12,8 @@
 }
 .switch-button .switch-button__label {
     background-color: var(--color-red);
-    width: 5rem;
-    height: 3rem;
+    width: 20px;
+    height: 15px;
     border-radius: 3rem;
     display: inline-block;
     position: relative;
@@ -22,8 +22,8 @@
     transition: .2s;
     display: block;
     position: absolute;
-    width: 3rem;
-    height: 3rem;
+    width: 15px;
+    height: 15px;
     background-color: var(--color-button);
     content: '';
     border-radius: 50%;
