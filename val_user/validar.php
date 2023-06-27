@@ -24,19 +24,19 @@ session_start();
 			$password = $_POST['pass'];
 			
 			// Query sent to database
-			$result = mysqli_query($conn, "SELECT email, pass FROM Login WHERE email = '$email'");
+			$result = mysqli_query($conn, "SELECT email, pass, nombre FROM Login WHERE email = '$email'");
 			
 			// Variable $row hold the result of the query
 			$row = mysqli_fetch_assoc($result);
 			
 			// Variable $hash hold the password hash on database
-			$hash = $row['Pass'];
-			$des = $row['Email'];
-			$user = $row['User'];
+			$hash = $row['pass'];
+			$des = $row['email'];
+			$user = $row['nombre'];
 			if ($_POST['pass'] == $hash ) {	
 				
 				$_SESSION['loggedin'] = true;
-				$_SESSION['name'] = $row['User'];
+				$_SESSION['name'] = $row['nombre'];
 				echo'<script type="text/javascript">
 					window.location.href="../index.html";</script>';
 				
