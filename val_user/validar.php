@@ -22,10 +22,15 @@ session_start();
 			
 			$email = $_POST['email']; 
 			$password = $_POST['pass'];
-			
-			// Query sent to database
-			$result = mysqli_query($conn, "SELECT email, pass, nombre FROM Login WHERE email = '$email'");
-			
+
+			$result1 = mysqli_prepare($conn, "SELECT email, pass, nombre FROM login WHERE email= ?");
+    
+			mysqli_stmt_bind_param($result1, 's', $email);    
+
+			$insert_value1 = mysqli_stmt_execute($result1);
+
+			$result = mysqli_query($conn, $insert_value1);
+						
 			// Variable $row hold the result of the query
 			$row = mysqli_fetch_assoc($result);
 			
@@ -37,14 +42,17 @@ session_start();
 				
 				$_SESSION['loggedin'] = true;
 				$_SESSION['name'] = $row['nombre'];
+				mysqli_stmt_close($stmt);
+        		mysqli_close($conn);
+    		
 				echo'<script type="text/javascript">
 					window.location.href="../index.html";</script>';
-				
-
-				
-						
+									
 			
 			} if($_POST['pass'] != $hash) {
+				mysqli_stmt_close($stmt);
+        		mysqli_close($conn);
+    
 				echo'<script type="text/javascript"> alert("Conexion fallida, compruebe si el usuario y contraseña estan bien escritas");
 				window.location.href="../login/index.html";</script>';			
 			}	
