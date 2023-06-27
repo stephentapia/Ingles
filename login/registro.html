@@ -25,19 +25,19 @@
         <div class="form"> 
             <form method="post" action="val_user/guardar.php">
                 <div class="inputBox"> 
-                    <input type="email" name="email" required> <i>Email</i> 
+                    <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required> <i>Email</i> 
                 </div> 
                 <br><br>
                 <div class="inputBox"> 
-                    <input type="nombre" name="nombre" pattern="[A-Za-z]{8,40}" required> <i>Nombre</i> 
+                    <input type="nombre" name="nombre" pattern="[a-zA-Z ]" required> <i>Nombre</i> 
                 </div> 
                 <br><br>
                 <div class="inputBox"> 
-                    <input type="apellido" name="apellido" pattern="[A-Za-z]{8,40}" required> <i>Apellido</i> 
+                    <input type="apellido" name="apellido" pattern="[a-zA-Z ]" required> <i>Apellido</i> 
                 </div>
                 <br><br>
                 <div class="inputBox"> 
-                    <input type="password" name="pass" pattern="[A-Za-z0-9]{8,40}" required> <i>Contrase&nacute;a</i> 
+                    <input type="password" name="pass" pattern="[A-Za-z0-9]{8}" required> <i>Contrase&nacute;a de maximo 8 caracteres</i> 
                 </div> 
                 <br><br>
                 <div class="inputBox"> 
@@ -50,7 +50,7 @@
 
    </div> 
 
-  </section> <!-- partial --> 
+  </section> 
 
  </body>
 
