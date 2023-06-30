@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Ingles</title>
+		<title>Echlet Consulting</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -40,7 +40,7 @@
 					<section id="banner">
 						<div class="inner">
 							<h2>Echlet Consulting</h2>
-							<p>Transformando tu tecnología, impulsando tu éxito<br />
+							<p>Transformando tu tecnologÃ­a, impulsando tu Ã©xito<br />
 							</p>
 						</div>
 						<a href="#one" class="more scrolly">&iquest;Quieres ver m&aacute;s?</a>
@@ -152,53 +152,34 @@
 						<div class="inner">
 							<section>
 								<h3>Contacto</h3>
-								<form method="post" action="#">
+								<form method="post" action="val_user/enviar.php">
 									<div class="row gtr-uniform">
 										<div class="col-6 col-12-xsmall">
-											<input type="text" name="demo-name" id="demo-name" value="" placeholder="Nombre" />
+											<input type="text" name="name" id="demo-name" value="" placeholder="Nombre" />
 										</div>
 										<div class="col-6 col-12-xsmall">
-											<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+											<input type="email" name="email" id="demo-email" value="" placeholder="Email" />
 										</div>
 										<div class="col-12">
-											<select name="demo-category" id="demo-category">
+											<select name="asunto" id="demo-category">
 												<option value="">- Categoria -</option>
 												<option value="1">Cotizacion</option>
 												<option value="1">Consulta</option>
 											</select>
 										</div>
 										<div class="col-12">
-											<h5>Nivel de Importancia</h5>
-										</div>
-										<div class="col-4 col-12-small">
-											<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-											<label for="demo-priority-low">Baja</label>
-										</div>
-										<div class="col-4 col-12-small">
-											<input type="radio" id="demo-priority-normal" name="demo-priority">
-											<label for="demo-priority-normal">Normal</label>
-										</div>
-										<div class="col-4 col-12-small">
-											<input type="radio" id="demo-priority-high" name="demo-priority">
-											<label for="demo-priority-high">Alto</label>
-										</div>
-										<div class="col-12">
 											<h5>Mensaje a redactar</h5>
 										</div>
 										<div class="col-12">
-											<textarea name="demo-message" id="demo-message" placeholder="Introduzca su mensaje" rows="6"></textarea>
+											<textarea name="msg" id="demo-message" placeholder="Introduzca su mensaje" rows="6"></textarea>
 										</div>
 										<div class="col-6 col-12-small">
-											<input type="checkbox" id="demo-copy" name="demo-copy">
-											<label for="demo-copy">Enviarme copia</label>
-										</div>
-										<div class="col-6 col-12-small">
-											<input type="checkbox" id="demo-human" name="demo-human">
+											<input type="checkbox" id="demo-human" name="demo-human" required>
 											<label for="demo-human">No soy un robot</label>
 										</div>
 										<div class="col-12">
 											<ul class="actions">
-												<li><input type="submit" value="Enviar Mensaje" class="primary" /></li>
+												<li><input type="submit" value="Enviar Mensaje" class="primary" name="enviar" /></li>
 												<li><input type="reset" value="Resetear" /></li>
 											</ul>
 										</div>
